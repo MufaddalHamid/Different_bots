@@ -10,8 +10,8 @@ import requests
 
 def telegram_bot_sendtext(bot_message):
     
-    bot_token = '1599072406:AAGSPz9hnOsEEwNe3UF-iSgBJ-VfODJrX-A'
-    bot_chatID = '1482616629'
+    bot_token = ' bot_token'
+    bot_chatID = 'bot_chat_id'
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' +"message"
 
     response = requests.get(send_text)
@@ -25,8 +25,8 @@ def report():
     js=telegram_bot_sendtext(my_message)
     print(type(js))
 def getchat_id():
-     bot_token = '1599072406:AAGSPz9hnOsEEwNe3UF-iSgBJ-VfODJrX-A'
-    # bot_chatID = '1482616629'
+     bot_token = ' bot_token'
+    # bot_chatID = '14826629'
      up='https://api.telegram.org/bot'+bot_token+'/getUpdates'
      res=requests.get(up)
      js=res.json()
