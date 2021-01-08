@@ -7,7 +7,7 @@ import org.jetbrains.annotations.NotNull;
 import javax.security.auth.login.LoginException;
 public class Main extends ListenerAdapter {
 public static void main(String[] args) throws LoginException {
-    String token="Nzk2MzI4NTM5NDY0Nzk0MTIz.X_WUvg.WtHCp5SwcqtXFp9Z_RX8WKe1Qas";
+    String token="...";
     JDABuilder builder=JDABuilder.createDefault(token);
     builder.addEventListeners(new Main());
     builder.build();
